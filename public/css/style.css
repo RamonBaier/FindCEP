@@ -1,0 +1,123 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.sidenav {
+  padding-bottom: 0px !important;
+
+}
+
+.sidenav .user-view {
+  margin-bottom: 0px !important;
+}
+
+/* Aumentando o tamanho da fonte do nome do usuário */
+.sidenav .user-view .name {
+  font-size: 1.5rem;
+}
+
+/* Aumentando o tamanho da fonte do email do usuário */
+.sidenav .user-view .email {
+  font-size: 1.05rem;
+}
+
+#novaRoma {
+  font-size: 1.4rem;
+  margin: 0px;
+}
+
+.custom-collection { 
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #dad4d4;
+}
+
+.custom-footer {
+  text-align: center;
+  font-weight: 900;
+}
+
+.collection {
+  margin: 0rem 0 0rem 0; 
+  border: 1px solid #6b6b6b;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #dad4d4;
+}
+
+.collection, .custom-collection, .cep {
+  margin: 0rem 0 0rem 0; 
+  border: 1px solid #6b6b6b;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #dad4d4;
+}
+
+.light-blue.lighten-1 {
+  background-color: #3f314f!important;
+}
+
+.btn, .btn-large, .btn-small {
+  color: #e4d3d2;
+  background-color: #8f3975;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #6b2c58;
+}
+
+input.select-dropdown {
+  border-bottom: 1px solid #6b2c58 !important;
+  box-shadow: 0 1px 0 0 #3e1933 !important;
+}
+
+.input-field .prefix.active {
+  color: #6b2c58;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #6b2c58;
+  -webkit-box-shadow: 0 1px 0 0 #6b2c58;
+          box-shadow: 0 1px 0 0 #6b2c58;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #6b2c58;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #815456;
+}

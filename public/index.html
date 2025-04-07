@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- codigo do projeto, trabalhado e editado pro antony e ramon -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Find CEP</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <div onclick="showTeamInfo"> <a id="logo-container" href="#" class="brand-logo">Find CEP</a> </div>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <p id="novaRoma" href="#">Nova Roma</p>
+                </li>
+            </ul>
+
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"></a>
+        </div>
+    </nav>
+    <!-- sidenav das infos do grupo  -->
+    <ul id="team-Info" class="sidenav" style="display: flex; flex-direction: column; height: 100vh;">
+        <!-- Perfil do usuário atual -->
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="./img/fundoAnthony.jpg">
+                </div>
+                <a><img class="circle" src="./img/perfilAnthony.jpg"></a>
+                <a><span class="white-text name">Anthony Rycahrd</span></a>
+                <a><span class="white-text email">anthony.souza@novaroma.edu.br</span></a>
+            </div>
+        </li>
+
+        <!-- Perfil do Ramom -->
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="./img/fundoRamon.jpg">
+                </div>
+                <a><img class="circle" src="./img/perfilRamon.jpg"></a>
+                <a><span class="white-text name">Ramon Baier</span></a>
+                <a><span class="white-text email">ramom.alves@novaroma.edu.br</span></a>
+            </div>
+        </li>
+
+        <!-- Espaço vazio -->
+        <li><br></li>
+
+        <!-- Seção sobre a aplicação -->
+        <li>
+            <div style="text-align: center;">
+                <h4>Find CEP</h4>
+                <blockquote style="line-height: 1.4; font-size: 1.2rem;">
+                    Nesta aplicação, consumimos duas APIs para resolver o problema da busca de endereços, permitindo a
+                    pesquisa tanto por CEP quanto por rua.
+                </blockquote>
+            </div>
+        </li>
+
+        <!-- Footer (perfil do professor) -->
+        <li style="margin-top: auto;">
+            <div class="user-view">
+                <div class="background">
+                    <img src="./img/fundoProfessor.jpg">
+                </div>
+                <a><img class="circle" src="./img/perfilProfessor.jpg" alt="Foto do Professor"></a>
+                <a><span class="white-text name">Hennig Summer</span></a>
+                <a><span class="white-text email">henning.summer@novaroma.com.br</span></a>
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s6"><a class="active" href="#test1">CEP</a></li>
+                    <li class="tab col s6"><a href="#test2">RUA</a></li>
+                </ul>
+            </div>
+            <!-- CEP -->
+            <div id="test1" class="col s12">
+                <div class="input-field col s9">
+                    <i class="material-icons prefix">map</i>
+                    <input id="cep" type="text" class="validate">
+                    <label for="cep">CEP</label>
+                </div>
+                <div class="input-field col s3">
+                    <a id="busca-cep" style="width: 100%;" class="waves-effect waves-light btn">
+                        <i class="material-icons left">search</i>Buscar</a>
+                </div>
+                <div id="lista-cep" class="col s12">
+
+                </div>
+            </div>
+            <!-- RUA -->
+            <div id="test2" class="col s12">
+                <div class="input-field col s6">
+                    <select onchange="listarCidade(event)" id="uf" class="browser-default"></select>
+                    <!-- identifica o clique e permite manipular -->
+                </div>
+                <div class="input-field col s6">
+                    <select id="city" class="browser-default"></select>
+                </div>
+                <div class="input-field col s10">
+                    <i class="material-icons prefix">streetview</i>
+                    <input id="street" type="text" class="validate">
+                    <label for="street">Rua</label>
+                </div>
+                <div class="input-field col s2">
+                    <a id="busca-rua" style="width: 100%;" class="waves-effect waves-light btn"><i
+                            class="material-icons left">search</i>Buscar</a>
+                </div>
+                <div class="col s12" id="lista-ruas"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="script.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
