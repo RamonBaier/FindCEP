@@ -63,24 +63,28 @@
 }
 
 .light-blue.lighten-1 {
-  background-color: #3f314f!important;
+  background-color: #252425!important;
+}
+
+nav .brand-logo {
+    color: #8ce2aa;   
 }
 
 .btn, .btn-large, .btn-small {
-  color: #e4d3d2;
-  background-color: #8f3975;
+  color: #252425;
+  background-color: #8ce2aa;
 }
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #6b2c58;
+  background-color: #7ac494;
 }
 
 input.select-dropdown {
-  border-bottom: 1px solid #6b2c58 !important;
-  box-shadow: 0 1px 0 0 #3e1933 !important;
+  border-bottom: 1px solid #8ce2aa !important;
+  box-shadow: 0 1px 0 0 #8ce2aa !important;
 }
 
 .input-field .prefix.active {
-  color: #6b2c58;
+  color: #8ce2aa;
 }
 
 input:not([type]):focus:not([readonly]),
@@ -96,9 +100,9 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #6b2c58;
-  -webkit-box-shadow: 0 1px 0 0 #6b2c58;
-          box-shadow: 0 1px 0 0 #6b2c58;
+  border-bottom: 1px solid #8ce2aa;
+  -webkit-box-shadow: 0 1px 0 0 #8ce2aa;
+          box-shadow: 0 1px 0 0 #8ce2aa;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -114,10 +118,34 @@ input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
 input[type=number]:not(.browser-default):focus:not([readonly]) + label,
 input[type=search]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #6b2c58;
+  color: #8ce2aa;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: #8ce2aa;
+  outline: none;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-  background-color: transparent;
-  color: #815456;
+  background-color: #e0e0e0;
+  color: #252425;
+}
+
+.tabs .indicator {
+  background-color: #252425;
+}
+
+.tabs .tab a {
+  background-color: #e0e0e0;
+  color: #252425;
+}
+
+
+body{
+  background-color: #e0e0e0;
+}
+
+select {
+    background-color: #e0e0e0;
+    border: 1px solid #252425;
 }
