@@ -1,2 +1,2 @@
 # FindCEP
-Aplicativo de busca de CEP ou Rua.
+Aplicativo de busca por CEP ou Rua.
